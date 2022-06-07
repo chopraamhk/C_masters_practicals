@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+void main()
+{
+ int marks1[10][10],marks2[10][10],i,j,x,y;
+ x=0; y=0; 
+ printf("which type of matrix you want to print?\n");
+ scanf("%d %d",&x,&y);
+ scanf("%d %d",&x,&y);
+ printf("enter the values of 1st matrix\n"); 
+ for(i=0; i<x; i++)
+ {
+    for(j=0; j<y; j++)
+   {
+     scanf("%d",&marks1[i][j]);
+     }
+    printf("next row\n");
+}
+ printf("enter the values of 2nd matrix\n");
+  for(i=0;i<x; i++)
+ { 
+   for(j=0;j<y;j++)
+  { scanf("%d",&marks2[i][j]);
+   }
+   printf("next row\n");
+  }
+ printf("matrices are printed below\n");
+ for(i=0; i<x; i++)
+ {
+   for(j=0; j<y; j++)
+   {
+     printf("%d\t",marks1[i][j]);
+
+    }
+    for(j=0; j<y; j++)
+  {
+   printf("%d\t",marks2[i][j]);
+}
+     printf("\n");
+    }
+ printf("sum of matrices is : \n");
+ 
+  for(i=0;i<x; i++)
+{
+   for(j=0;j<y;j++)
+   printf("%d\t", marks1[i][j]+marks2[i][j]);
+   printf("\n");
+}
+ 
+ }
