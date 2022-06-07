@@ -1,0 +1,12 @@
+ #include<stdio.h> 
+          void main()
+        {
+           int *p,*p1,*p2; int a,b,c;
+           printf("Enter the two numbers\n");
+           scanf("%d %d",&a,&b);
+           p=&a; p1=&b; p2=&c;
+           c=a+b;
+           printf("The two numbers are %d, %d \n",*p,*p1);
+           printf("Addition of the two numbers are %d\n",*p2);
+           printf("Address of number1=%p\nAddress of number2=%p\nAddress of addition=%p\n",p,p1,p2);
+}
