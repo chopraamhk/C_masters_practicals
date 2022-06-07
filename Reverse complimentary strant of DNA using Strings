@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void main()
+{
+ char seq[50];
+ char cdna[50];
+ int i,n;
+ printf("enter the number of nucleotide bases\n");
+ scanf("%d", &n);
+ printf("enter the DNA sequence\n");
+ 
+ for (i=0;i<=n;i++)
+  {
+    scanf("%c", &seq[i]);
+   }
+ for (i=0;i<=n;i++)
+  {
+    if (seq[i]=='A')
+       cdna[i]='T';
+    if (seq[i]=='T')
+       cdna[i]='A';
+    if (seq[i]=='G')
+       cdna[i]='C';
+    if (seq[i]=='C')
+       cdna[i]='G';
+  }
+  printf("the complementary sequence is : \n");
+  for(i=0; i<=n; i++)
+   {
+     printf("%c", cdna[i]);
+    }
+ printf(“\n”);
+  }
