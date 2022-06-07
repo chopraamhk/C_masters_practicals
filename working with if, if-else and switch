@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<math.h>
+
+void main()
+{ 
+  int x1,x2,x3,y1,y2,y3;
+  int a,b,c;
+  printf("enter the x co-ordinates: \n");
+  scanf("%d%d%d",&x1,&x2,&x3);
+
+  printf("enter the y co-ordinates: \n");
+  scanf("%d%d%d",&y1,&y2,&y3);
+
+  a= ((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))^1/2;
+  b= ((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2))^1/2;
+
+  c= ((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1))^1/2;
+  printf("values %d\n %d\n %d\n", a,b,c);
+ {
+ if (a==b)
+  {
+    if(b!=c)
+    {
+    printf("isosceles\n");
+    }
+    else
+    printf("equilateral\n");
+  }
+   else if ((a==c) || (b==c))
+   { 
+    printf("isosceles\n");
+     }
+   else
+  { 
+    printf("neither isosceles nor equilateral\n");
+   }
+  }
+ {
+  if(a>b) 
+  { 
+   if ((a>c) && ((a*a)==(b*b) + (c*c)))
+  printf("right angles triangle with hyp. a\n");
+  }
+  else if ((b>c) && ((b*b)==(a*a) + (c*c)))
+  printf("right angled triangle with hyp. b\n");
+  else
+  {
+   printf("not a right angled triangle\n");
+}
+}
+}
