@@ -1,3 +1,6 @@
-# C_coding_examples
-
-This repository contains few basic codes to execute using C language. 
+#Coursework - MSc Bioinformatics 
+```
+Module: Introduction to C Programming
+Batch: 2019-21 
+Centre for Bioinformatics, Pondicherry University
+```
